@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  stand-alone-git:
+    image: mongo:5.0
+    container_name: stand-alone-git
+    restart: on-failure
+    ports:
+      - 27021:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=userroot
+      - MONGO_INITDB_ROOT_PASSWORD=passroot
+      - MONGO_INITDB_DATABASE=newExample
+      - MONGO_INITDB_USERNAME=userNewExample
+      - MONGO_INITDB_PASSWORD=passNewExample
+    volumes:
+      - ./init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh
+      - ./db:/data/db
+
