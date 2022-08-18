@@ -12,9 +12,9 @@
         - newExample
 
 # uri admin 
-    ```
-        mongodb://userroot:passroot@localhost:27021/admin
-    ```
+    
+    mongodb://userroot:passroot@localhost:27021/admin
+    
   - userroot    คือ ใน compose คือ MONGO_INITDB_ROOT_USERNAME
   - userroot    คือ ใน compose คือ MONGO_INITDB_ROOT_PASSWORD
   - localhost   คือ domain ของ container ที่เราเอาไปวาง
@@ -22,9 +22,9 @@
   - admin       คือ ชื่อ database ที่เราต้องการจะเข้า
 
 # uri newExample
-    ```
-        mongodb://userNewExample:passNewExample@localhost:27021/newExample
-    ```
+    
+    mongodb://userNewExample:passNewExample@localhost:27021/newExample
+    
   - userNewExample    คือ ใน compose คือ MONGO_INITDB_USERNAME
   - passNewExample    คือ ใน compose คือ MONGO_INITDB_PASSWORD
   - localhost         คือ domain ของ container ที่เราเอาไปวาง
